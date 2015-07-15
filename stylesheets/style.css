@@ -1,4 +1,5 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+@import url(../icomoon/style.css);
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,50 +21,226 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 body {
   font-size: 62.5%;
+  font-family: 'HelveticaNeue-Light';
+}
+
+/* line 23, ../sass/style.scss */
+.navigator {
+  background-color: #fffbf5;
+  position: relative;
+  box-shadow: 0 1px 2px #f2eee8;
+}
+
+/* line 29, ../sass/style.scss */
+.nav-small-icon-container {
+  height: 50px;
+}
+
+/* line 33, ../sass/style.scss */
+.nav-small-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  margin: 12px;
+}
+
+/* line 42, ../sass/style.scss */
+#nav-icon-style-blue {
+  background-color: #7aa6cd;
+}
+
+/* line 46, ../sass/style.scss */
+li.seperator {
+  display: inline-block;
+  height: 50px;
+  width: 1px;
+  background-color: #f2eee8;
+}
+
+/* line 53, ../sass/style.scss */
+#nav-icon-style-simple {
+  border-color: #f2eee8;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 59, ../sass/style.scss */
+span#font-icon-white {
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-size: 10px;
+}
+
+/* line 67, ../sass/style.scss */
+span#font-icon {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-size: 10px;
+}
+
+/* line 74, ../sass/style.scss */
+span#nav-icon-center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: #7aa6cd;
+  font-size: 18px;
+}
+
+/* line 82, ../sass/style.scss */
+.nav-right-part {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+}
+
+/* line 90, ../sass/style.scss */
+.right-search-container {
+  height: 50%;
+  width: 75%;
+  display: inline-block;
+  border-color: #f2eee8;
+  border-radius: 15px;
+  border-width: 1px;
+  border-style: solid;
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+
+/* line 102, ../sass/style.scss */
+.right-search-field {
+  height: 100%;
+  width: 75%;
+  display: inline-block;
+  border: none;
+  background: none;
+  padding-left: 10px;
+  color: #f2eee8;
+}
+
+/* line 112, ../sass/style.scss */
+#right-search-button {
+  height: 100%;
+  width: 15%;
+  display: inline-block;
+  border: none;
+  background: none;
+}
+
+/* line 120, ../sass/style.scss */
+.nav-right-icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 12px 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 130, ../sass/style.scss */
+.main-part {
+  width: 100%;
+  position: relative;
+}
+
+/* line 135, ../sass/style.scss */
+.main-left {
+  width: 180px;
+  background-color: #7aa6cd;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 143, ../sass/style.scss */
+.main-right {
+  width: 180px;
+  background-color: #fffbf5;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+/* line 151, ../sass/style.scss */
+.main-center {
+  background-color: #f2eee8;
+  width: 800px;
+  position: absolute;
+  left: 180px;
+  z-index: -1;
+}
+
+/* line 159, ../sass/style.scss */
+.main-left-center-image {
+  width: 32%;
+  display: inline-block;
+}
+
+/* line 164, ../sass/style.scss */
+img.image-detail {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+/* line 170, ../sass/style.scss */
+.video {
+  width: 400px;
+  height: 300px;
 }
