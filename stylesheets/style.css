@@ -70,136 +70,112 @@ body {
   font-family: 'HelveticaNeue-Light';
 }
 
-/* line 23, ../sass/style.scss */
-.navigator {
-  background-color: #fffbf5;
-  position: relative;
+/* line 24, ../sass/style.scss */
+.header {
+  position: fixed;
   box-shadow: 0 1px 2px #f2eee8;
+  width: 100%;
+  background-color: #fffbf5;
 }
 
-/* line 29, ../sass/style.scss */
-.nav-small-icon-container {
-  height: 50px;
+/* line 31, ../sass/style.scss */
+.header .left-icon {
+  padding: 20px 12px;
+  float: left;
+  border-color: #f2eee8;
+  border-width: 0 1px 0 0;
+  border-style: solid;
 }
-
-/* line 33, ../sass/style.scss */
-.nav-small-icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
+/* line 38, ../sass/style.scss */
+.header .left-icon .fa-quill:before {
+  padding: 8px;
   border-radius: 50%;
-  position: relative;
-  margin: 12px;
-}
-
-/* line 42, ../sass/style.scss */
-#nav-icon-style-blue {
   background-color: #7aa6cd;
+  color: white;
+  font-size: 10px;
 }
 
-/* line 46, ../sass/style.scss */
-li.seperator {
+/* line 47, ../sass/style.scss */
+.header .small-icons {
   display: inline-block;
-  height: 50px;
-  width: 1px;
-  background-color: #f2eee8;
+  float: left;
 }
-
+/* line 50, ../sass/style.scss */
+.header .small-icons > li {
+  padding: 20px 6px;
+  display: inline-block;
+}
 /* line 53, ../sass/style.scss */
-#nav-icon-style-simple {
+.header .small-icons > li .font-icon:before {
+  padding: 8px;
+  border-radius: 50%;
   border-color: #f2eee8;
   border-width: 1px;
   border-style: solid;
-}
-
-/* line 59, ../sass/style.scss */
-span#font-icon-white {
-  color: white;
-  position: absolute;
-  top: 35%;
-  left: 35%;
   font-size: 10px;
+  color: #565c56;
+}
+/* line 64, ../sass/style.scss */
+.header .small-icons li:first-of-type {
+  padding-left: 12px;
 }
 
-/* line 67, ../sass/style.scss */
-span#font-icon {
+/* line 69, ../sass/style.scss */
+.header .fa-twitter:before {
   position: absolute;
-  top: 35%;
-  left: 35%;
-  font-size: 10px;
-}
-
-/* line 74, ../sass/style.scss */
-span#nav-icon-center {
-  position: absolute;
-  top: 30%;
+  top: 16px;
   left: 50%;
   color: #7aa6cd;
   font-size: 18px;
 }
 
-/* line 82, ../sass/style.scss */
-.nav-right-part {
+/* line 77, ../sass/style.scss */
+.header .right-icon {
+  float: right;
   display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20%;
-  height: 100%;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  padding: 12px;
 }
 
-/* line 90, ../sass/style.scss */
-.right-search-container {
-  height: 50%;
-  width: 75%;
-  display: inline-block;
+/* line 86, ../sass/style.scss */
+.header .right-search-container {
+  float: right;
+  width: 150px;
+  height: 26px;
+  margin: 12px;
+  margin-right: 0;
   border-color: #f2eee8;
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
-  position: absolute;
-  left: 0;
-  top: 25%;
 }
-
-/* line 102, ../sass/style.scss */
-.right-search-field {
-  height: 100%;
+/* line 97, ../sass/style.scss */
+.header .right-search-container .search-input {
   width: 75%;
-  display: inline-block;
+  padding-left: 10px;
+  padding-top: 6px;
   border: none;
   background: none;
-  padding-left: 10px;
   color: #f2eee8;
 }
-
-/* line 112, ../sass/style.scss */
-#right-search-button {
-  height: 100%;
+/* line 106, ../sass/style.scss */
+.header .right-search-container .search-button {
   width: 15%;
-  display: inline-block;
+  padding-left: 5px;
   border: none;
   background: none;
+  color: #565c56;
 }
 
-/* line 120, ../sass/style.scss */
-.nav-right-icon {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  padding: 12px 10px;
-  position: absolute;
-  right: 0;
-}
-
-/* line 130, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .main-part {
   width: 100%;
   position: relative;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .main-left {
   width: 180px;
   background-color: #7aa6cd;
@@ -208,7 +184,7 @@ span#nav-icon-center {
   z-index: -1;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .main-right {
   width: 180px;
   background-color: #fffbf5;
@@ -217,7 +193,7 @@ span#nav-icon-center {
   z-index: -1;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .main-center {
   background-color: #f2eee8;
   width: 800px;
@@ -226,20 +202,20 @@ span#nav-icon-center {
   z-index: -1;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .main-left-center-image {
   width: 32%;
   display: inline-block;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 img.image-detail {
   width: 60px;
   height: 60px;
   border: none;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .video {
   width: 400px;
   height: 300px;

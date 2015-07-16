@@ -10,122 +10,111 @@ body {
 $background-color: rgb(255, 251, 245);
 $main-blue-color: rgb(122, 166, 205);
 $main-gray-color: rgb(242, 238, 232);
-$mail-black-color: rgb(86, 92, 86);
+$main-black-color: rgb(86, 92, 86);
 
 $font-size-large: 22px;
 $font-size-small: 18px;
 
-$nav-vertical-padding: 12px;
+$header-icon-padding: 12px;
+$header-icon-internal-padding: 8px;
 $nav-height: 50px;
-$icon-height: 25px;
+$icon-height: 26px;
 $main-part-left-right-width: 180px;
 
-.navigator {
-	background-color: $background-color;
-	position: relative;
+.header {
+	position: fixed;
 	box-shadow: 0 1px 2px $main-gray-color;
+	width: 100%;
+	background-color: $background-color;
 }
 
-.nav-small-icon-container {
-	height: $nav-height;
-}
-
-.nav-small-icon {
-	display: inline-block;
-	width: $icon-height;
-	height: $icon-height;
-	border-radius: 50%;
-	position: relative;
-	margin: $nav-vertical-padding;
-}
-
-#nav-icon-style-blue {
-	background-color: $main-blue-color;
-}
-
-li.seperator {
-	display: inline-block;
-	height: $nav-height;
-	width: 1px;
-	background-color: $main-gray-color;
-}
-
-#nav-icon-style-simple {
+.header .left-icon {
+	padding: $header-icon-padding+$header-icon-internal-padding $header-icon-padding;
+	float: left;
 	border-color: $main-gray-color;
-	border-width: 1px;
+	border-width: 0 1px 0 0;
   	border-style: solid;
+
+  	.fa-quill:before {
+		padding: $header-icon-internal-padding;
+		border-radius: 50%;
+		background-color: $main-blue-color;
+		color: white;
+		font-size: 10px;
+	}
 }
 
-span#font-icon-white {
-	color: white;
-	position: absolute;
-	top: 35%;
-	left: 35%;
-	font-size: 10px;
+.header .small-icons {
+	display: inline-block;
+	float: left;
+	& > li {
+		padding: $header-icon-padding+$header-icon-internal-padding $header-icon-padding/2;
+		display: inline-block;
+		.font-icon:before {
+			padding: $header-icon-internal-padding;
+			border-radius: 50%;
+			border-color: $main-gray-color;
+			border-width: 1px;
+  			border-style: solid;
+			font-size: 10px;
+			color: $main-black-color;
+		}
+	}
+
+	li:first-of-type {
+		padding-left: $header-icon-padding;
+	}
 }
 
-span#font-icon {
+.header .fa-twitter:before {
 	position: absolute;
-	top: 35%;
-	left: 35%;
-	font-size: 10px;
-}
-
-span#nav-icon-center {
-	position: absolute;
-	top: 30%;
+	top: 16px;
 	left: 50%;
 	color: $main-blue-color;
 	font-size: $font-size-small;
 }
 
-.nav-right-part {
-	display: inline-block;
-	position: absolute;
-	right: 0; top: 0;
-	width: 20%;
-	height: 100%;
-}
-
-.right-search-container {
-	height: 50%;
-	width: 75%;
-	display: inline-block;
-	border-color: $main-gray-color;
-	border-radius: 15px;
-	border-width: 1px;
-	border-style: solid;
-	position: absolute;
-	left: 0; top: 25%;
-}
-
-.right-search-field {
-	height: 100%;
-	width: 75%;
-	display: inline-block;
-	border: none;
-	background: none;
-	padding-left: 10px;
-	color: $main-gray-color;
-}
-
-#right-search-button {
-	height: 100%;
-	width: 15%;
-	display: inline-block;
-	border: none;
-	background: none;
-}
-
-.nav-right-icon {
+.header .right-icon {
+	float: right;
 	display: inline-block;
 	height: $icon-height;
 	width: $icon-height;
 	border-radius: 50%;
-	padding: $nav-vertical-padding 10px;
-	position: absolute;
-	right: 0;
+	padding: $header-icon-padding;
 }
+
+.header .right-search-container {
+	float: right;
+	width: 150px;
+	height: $icon-height;
+	margin: $header-icon-padding;
+	margin-right: 0;
+	border-color: $main-gray-color;
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+
+	.search-input {
+		width: 75%;
+		padding-left: 10px;
+		padding-top: 6px;
+		border: none;
+		background: none;
+		color: $main-gray-color;
+	}
+
+	.search-button {
+		width: 15%;
+		padding-left: 5px;
+		border: none;
+		background: none;
+		color: $main-black-color;
+	}
+}
+
+
+
+
 
 .main-part {
 	width: 100%;

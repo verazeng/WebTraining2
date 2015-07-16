@@ -10,31 +10,21 @@
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
 </head>
 <body>
-	<nav class="navigator">
-		<ui class="nav-small-icon-container">
-			<li class="nav-small-icon" id="nav-icon-style-blue">
-				<span class="fa-quill" id="font-icon-white"></span>
-			</li>
-			<li class="seperator"></li>
-			<li class="nav-small-icon" id="nav-icon-style-simple">
-				<span class="fa-notifications" id="font-icon"></span>
-			</li>
-			<li class="nav-small-icon" id="nav-icon-style-simple">
-				<span class="fa-mail" id="font-icon"></span>
-			</li>
-			<li class="nav-small-icon" id="nav-icon-style-simple">
-				<span class="fa-more-horiz" id="font-icon"></span>
-			</li>
+	<header class="header">
+		<span class="left-icon"><i class="fa-quill"></i></span>
+		<ui class="small-icons">
+			<li><i class="fa-notifications font-icon"></i></li>
+			<li><i class="fa-mail font-icon"></i></li>
+			<li><i class="fa-more-horiz font-icon"></i></li>
 		</ui>
-		<span class="fa-twitter" id="nav-icon-center"></span>
-		<div class="nav-right-part">
-			<div class="right-search-container">
-				<input type="text" class="right-search-field" placeHolder="Search"><button class="fa-search" id="right-search-button">
-			</div>
-			<img src="resources/p6.jpg" alt="" class="nav-right-icon">
-		</div>
-	</nav>
-	<section class="main-part">
+		<i class="fa-twitter"></i>
+		<img src="resources/p6.jpg" alt="" class="right-icon">
+		<span class="right-search-container">
+			<input type="text" class="search-input" placeHolder="Search"> <button class="fa-search search-button"></button>
+		</span>
+	</header>
+
+	<!-- <section class="main-part">
 		<section class="main-left">
 			<section class="main-left-top">
 				<br><h1>left-section-1</h1>
@@ -76,6 +66,6 @@
 				<h1>main-right-bottom-section</h1>
 			</section>
 		</section>
-	</section>
+	</section> -->
 </body>
 </html>
