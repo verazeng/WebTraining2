@@ -410,7 +410,7 @@ h3 {
   color: white;
 }
 
-/* line 309, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .main-part .right {
   position: absolute;
   right: 0;
@@ -419,62 +419,104 @@ h3 {
   width: 200px;
   background-color: #fffbf5;
 }
+/* line 316, ../sass/style.scss */
+.main-part .right h1 {
+  color: #565c56;
+  padding-bottom: 10px;
+}
+
+/* line 319, ../sass/style.scss */
+.main-part .right .trends {
+  padding: 20px;
+}
+/* line 321, ../sass/style.scss */
+.main-part .right .trends a:link {
+  color: #7aa6cd;
+  text-decoration: none;
+}
+/* line 322, ../sass/style.scss */
+.main-part .right .trends a:visited {
+  color: #7aa6cd;
+  text-decoration: none;
+}
+
+/* line 325, ../sass/style.scss */
+.main-part .right .to-follow {
+  padding: 20px;
+}
+/* line 327, ../sass/style.scss */
+.main-part .right .to-follow h2 {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+}
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
-  /* line 318, ../sass/style.scss */
+  /* line 331, ../sass/style.scss */
+  .main-part .left {
+    height: 600px;
+  }
+
+  /* line 334, ../sass/style.scss */
   .main-part .right {
+    position: absolute;
+    left: 0;
+    top: 600px;
+  }
+  /* line 335, ../sass/style.scss */
+  .main-part .right .trends {
     display: none;
   }
 
-  /* line 322, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   .main-part .center {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 328, ../sass/style.scss */
+  /* line 347, ../sass/style.scss */
   .header .small-icons {
     display: none;
   }
 
-  /* line 332, ../sass/style.scss */
+  /* line 351, ../sass/style.scss */
   .header .right-search-container {
     display: none;
   }
 
-  /* line 336, ../sass/style.scss */
+  /* line 355, ../sass/style.scss */
   .main-part .right {
     display: none;
   }
 
-  /* line 339, ../sass/style.scss */
+  /* line 358, ../sass/style.scss */
   .main-part .left {
     display: none;
   }
 
-  /* line 342, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   .main-part .center {
     margin: 0;
   }
-  /* line 344, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   .main-part .center .content {
     margin: 25px 0 0 0;
   }
-  /* line 348, ../sass/style.scss */
+  /* line 367, ../sass/style.scss */
   .main-part .center .tweets {
     margin-top: 220px;
   }
-  /* line 352, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   .main-part .center .tabs {
     height: 200px;
   }
-  /* line 353, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   .main-part .center .tabs > li {
     display: block;
     width: 100%;
     height: 25%;
   }
-  /* line 361, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   .main-part .center .video {
     margin-top: -30px;
     height: 100px;

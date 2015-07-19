@@ -306,17 +306,36 @@ h3 {
 		a:visited {color:white;}
 	}
 }
+
 .main-part .right {
 	position: absolute;
 	right: 0;
 	top: 0; bottom: 0;
 	width: $main-part-left-right-width;
 	background-color : $background-color;	
+	h1 {color: $main-black-color; padding-bottom: 10px;}
+}
+
+.main-part .right .trends {
+	padding: 20px;
+	a:link {color: $main-blue-color; text-decoration: none;}
+	a:visited {color: $main-blue-color;text-decoration: none;}
+}
+
+.main-part .right .to-follow {
+	padding: 20px;
+	h2{display: inline-block; padding: 0 10px; line-height: 30px;}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) { 
+	.main-part .left {
+		height: 600px;
+	}
 	.main-part .right {
-		display: none;
+		.trends{display: none;}
+		position: absolute;
+		left: 0;
+		top: 600px;
 	}
 
 	.main-part .center {
