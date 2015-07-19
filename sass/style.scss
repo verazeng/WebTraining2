@@ -2,11 +2,6 @@
 @import "compass/css3";
 @import "../icomoon/style.css";
 
-body {
-	font-size: 62.5%;
-	font-family: 'HelveticaNeue-Light';
-}
-
 $background-color: rgb(255, 251, 245);
 $main-blue-color: rgb(122, 166, 205);
 $main-gray-color: rgb(242, 238, 232);
@@ -19,12 +14,41 @@ $header-icon-padding: 12px;
 $header-icon-internal-padding: 8px;
 $nav-height: 50px;
 $icon-height: 26px;
-$main-part-left-right-width: 180px;
+$main-part-left-right-width: 200px;
+
+$content-gray-color: rgb(191, 187, 172);
+
+body {
+	font-size: 62.5%;
+	font-family: 'HelveticaNeue-Light';
+	background-color: $background-color;
+}
+
+h1 {
+	font-family: 'HelveticaNeue-Light';
+	font-size: 12px;
+	font-weight: normal;
+	color: rgb(97, 95, 89);
+}
+
+h2 {
+	font-family: 'HelveticaNeue-Light';
+	font-size: 10px;
+	color: rgb(191, 187, 172);
+}
+
+h3 {
+	font-family: 'HelveticaNeue-Light';
+	font-size: 10px;
+	color: rgb(159, 157, 151);
+}
 
 .header {
 	position: fixed;
+	left: 0; right: 0;
+	height: $nav-height;
+	z-index: 1;
 	box-shadow: 0 1px 2px $main-gray-color;
-	width: 100%;
 	background-color: $background-color;
 }
 
@@ -68,18 +92,20 @@ $main-part-left-right-width: 180px;
 
 .header .fa-twitter:before {
 	position: absolute;
-	top: 16px;
-	left: 50%;
+	top: 16px; left: 50%;
 	color: $main-blue-color;
 	font-size: $font-size-small;
 }
 
-.header .right-icon {
-	float: right;
+.avatar {
 	display: inline-block;
 	height: $icon-height;
 	width: $icon-height;
 	border-radius: 50%;
+}
+
+.header .avatar {
+	float: right;
 	padding: $header-icon-padding;
 }
 
@@ -112,51 +138,229 @@ $main-part-left-right-width: 180px;
 	}
 }
 
-
-
-
-
 .main-part {
-	width: 100%;
-	position: relative;
+	margin-top: $nav-height;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
 }
 
-.main-left {
-	width: $main-part-left-right-width;
-	background-color: $main-blue-color;
+.main-part .center {
+	margin: 0 $main-part-left-right-width;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	background-color: rgb(242, 238, 232);
+}
+
+.main-part .center .content {
+	margin: 25px;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+}
+
+.main-part .center .tabs {
+	position: absolute;
+	left: 0; right: 0;
+	top: 0;
+	height: $nav-height;	
+	background-color: $background-color;
+	box-shadow: 2px 2px 2px $main-gray-color;
+
+	& > li {
+		display: inline-block;
+		text-align: center;
+		width: 25%;
+		height: 100%;
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	li:first-of-type {
+		border-width: 0 0 4px 0;
+		border-color: $main-blue-color;
+		border-style: solid;
+	}
+
+	.tab-content {
+		display: inline-block;
+		margin: 0 auto;
+		line-height: 15px;
+	}
+}
+
+.main-part .center .tweets {
+	margin-top: $nav-height+20px;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	background-color : $background-color;
+	box-shadow: 2px 2px 2px $main-gray-color;
+	
+	& >li {
+		position: relative;
+		padding: 20px;
+		border-width: 1px 0 0 0;
+		border-color: $main-gray-color;
+		border-style: solid;
+		clear: both;
+	}
+
+	li:first-of-type {
+		border-width: 0;
+	}
+
+	.avatar {
+		// float: left;
+	}
+}
+
+.main-part .center .tweets .tweet-content {
+	display: inline-block;
+	padding-left: 35px;
+	width: 100%;
+	box-sizing:border-box;
+
+	& > li {
+		line-height: 13px;
+		margin-top: 5px;
+	}
+
+	li:first-of-type {
+		margin-top: 0;
+	}
+
+	.font-icon {
+		color: $content-gray-color;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+
+	i:first-of-type {
+		padding: 0;
+	}
+
+	.right-component {
+		float: right;
+	}
+
+	h1{display: inline-block;}
+	h2{display: inline-block; padding-left:5px;}
+
+	.video {
+		height: 250px;
+		width: 100%;
+	}
+}
+
+
+.main-part .left {
 	position: absolute;
 	left: 0;
-	z-index: -1;
+	top: 0; bottom: 0;
+	width: $main-part-left-right-width;
+	background-color : $main-blue-color;
 }
 
-.main-right {
-	width: $main-part-left-right-width;
-	background-color: $background-color;
+.main-part .left .user-info {
+	text-align: center;
+	line-height: 15px;
+	padding: 20px;
+
+	.avatar {
+		margin: 10px auto;
+		display: block;
+		height: $icon-height*3;
+		width: $icon-height*3;
+	}
+
+	h1 {color: white;}
+	h3 {padding-top: 5px;color: white;}
+}
+
+.main-part .left .images {
+	& > li {
+		width: 33.3%;
+		display: inline-block;
+		&>img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.main-part .left .activities {
+	padding: 20px;
+	h1 {color: white; padding-bottom: 5px;}
+	span {
+		display: block;
+		padding: 5px 0;
+		box-sizing: border-box;
+		.act-font-icon {
+			display: inline-block;
+			color: $main-black-color;
+		}
+		h2 {display: inline-block; padding: 0 10px;}
+		a:link {color:white;}
+		a:visited {color:white;}
+	}
+}
+.main-part .right {
 	position: absolute;
 	right: 0;
-	z-index: -1;
+	top: 0; bottom: 0;
+	width: $main-part-left-right-width;
+	background-color : $background-color;	
 }
 
-.main-center {
-	background-color: rgb(242, 238, 232);
-	width: 800px;
-	position: absolute;
-	left: $main-part-left-right-width;
-	z-index: -1;
+@media screen and (max-width: 1024px) and (min-width: 641px) { 
+	.main-part .right {
+		display: none;
+	}
+
+	.main-part .center {
+		margin-right: 0;
+	}
 }
 
-.main-left-center-image {
-	width: 32%;
-	display: inline-block;
-}
+@media screen and (max-width: 640px) { 
+	.header .small-icons {
+		display: none;
+	}	
 
-img.image-detail {
-	width: 60px;
-	height: 60px;
-	border: none;
-}
+	.header .right-search-container {
+		display: none;
+	}
 
-.video {
-	width: 400px;
-	height: 300px;
+	.main-part .right {
+		display: none;
+	}
+	.main-part .left {
+		display: none;
+	}
+	.main-part .center {
+		margin: 0;
+		.content {
+			margin: 25px 0 0 0;
+		}
+
+		.tweets {
+			margin-top: $nav-height*4+20px;
+		}
+
+		.tabs {
+			& > li {
+				display: block;
+				width: 100%;
+				height: 25%;
+			}
+			height: $nav-height*4;
+		}
+
+		.video {
+			margin-top: -30px;
+			height: 100px;
+		}
+	}
 }
