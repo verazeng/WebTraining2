@@ -206,7 +206,7 @@ h3 {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: -200px;
 }
 
 /* line 148, ../sass/style.scss */
@@ -223,6 +223,7 @@ h3 {
 /* line 156, ../sass/style.scss */
 .main-part .center .content {
   margin: 25px;
+  margin-bottom: 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -230,7 +231,7 @@ h3 {
   bottom: 0;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .main-part .center .tabs {
   position: absolute;
   left: 0;
@@ -240,7 +241,7 @@ h3 {
   background-color: #fffbf5;
   box-shadow: 2px 2px 2px #f2eee8;
 }
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .main-part .center .tabs > li {
   display: inline-block;
   text-align: center;
@@ -249,20 +250,20 @@ h3 {
   box-sizing: border-box;
   position: relative;
 }
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .main-part .center .tabs li:first-of-type {
   border-width: 0 0 4px 0;
   border-color: #7aa6cd;
   border-style: solid;
 }
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .main-part .center .tabs .tab-content {
   display: inline-block;
   margin: 0 auto;
   line-height: 15px;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .main-part .center .tweets {
   margin-top: 70px;
   position: absolute;
@@ -273,7 +274,7 @@ h3 {
   background-color: #fffbf5;
   box-shadow: 2px 2px 2px #f2eee8;
 }
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .main-part .center .tweets > li {
   position: relative;
   padding: 20px;
@@ -282,57 +283,57 @@ h3 {
   border-style: solid;
   clear: both;
 }
-/* line 210, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .main-part .center .tweets li:first-of-type {
   border-width: 0;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .main-part .center .tweets .tweet-content {
   display: inline-block;
   padding-left: 35px;
   width: 100%;
   box-sizing: border-box;
 }
-/* line 225, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .main-part .center .tweets .tweet-content > li {
   line-height: 13px;
   margin-top: 5px;
 }
-/* line 230, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .main-part .center .tweets .tweet-content li:first-of-type {
   margin-top: 0;
 }
-/* line 234, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .main-part .center .tweets .tweet-content .font-icon {
   color: #bfbbac;
   padding-left: 10px;
   padding-top: 5px;
 }
-/* line 240, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .main-part .center .tweets .tweet-content i:first-of-type {
   padding: 0;
 }
-/* line 244, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .main-part .center .tweets .tweet-content .right-component {
   float: right;
 }
-/* line 248, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .main-part .center .tweets .tweet-content h1 {
   display: inline-block;
 }
-/* line 249, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .main-part .center .tweets .tweet-content h2 {
   display: inline-block;
   padding-left: 5px;
 }
-/* line 251, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .main-part .center .tweets .tweet-content .video {
   height: 250px;
   width: 100%;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .main-part .left {
   position: absolute;
   left: 0;
@@ -342,75 +343,75 @@ h3 {
   background-color: #7aa6cd;
 }
 
-/* line 266, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .main-part .left .user-info {
   text-align: center;
   line-height: 15px;
   padding: 20px;
 }
-/* line 271, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .main-part .left .user-info .avatar {
   margin: 10px auto;
   display: block;
   height: 78px;
   width: 78px;
 }
-/* line 278, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .main-part .left .user-info h1 {
   color: white;
 }
-/* line 279, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .main-part .left .user-info h3 {
   padding-top: 5px;
   color: white;
 }
 
-/* line 283, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .main-part .left .images > li {
   width: 33.3%;
   display: inline-block;
 }
-/* line 286, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .main-part .left .images > li > img {
   width: 100%;
   height: 100%;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .main-part .left .activities {
   padding: 20px;
 }
-/* line 295, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .main-part .left .activities h1 {
   color: white;
   padding-bottom: 5px;
 }
-/* line 296, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .main-part .left .activities span {
   display: block;
   padding: 5px 0;
   box-sizing: border-box;
 }
-/* line 300, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .main-part .left .activities span .act-font-icon {
   display: inline-block;
   color: #565c56;
 }
-/* line 304, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .main-part .left .activities span h2 {
   display: inline-block;
   padding: 0 10px;
 }
-/* line 305, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .main-part .left .activities span a:link {
   color: white;
 }
-/* line 306, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .main-part .left .activities span a:visited {
   color: white;
 }
 
-/* line 310, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .main-part .right {
   position: absolute;
   right: 0;
@@ -419,32 +420,32 @@ h3 {
   width: 200px;
   background-color: #fffbf5;
 }
-/* line 316, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .main-part .right h1 {
   color: #565c56;
   padding-bottom: 10px;
 }
 
-/* line 319, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .main-part .right .trends {
   padding: 20px;
 }
-/* line 321, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .main-part .right .trends a:link {
   color: #7aa6cd;
   text-decoration: none;
 }
-/* line 322, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .main-part .right .trends a:visited {
   color: #7aa6cd;
   text-decoration: none;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .main-part .right .to-follow {
   padding: 20px;
 }
-/* line 327, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .main-part .right .to-follow h2 {
   display: inline-block;
   padding: 0 10px;
@@ -452,71 +453,71 @@ h3 {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
-  /* line 331, ../sass/style.scss */
+  /* line 332, ../sass/style.scss */
   .main-part .left {
     height: 600px;
   }
 
-  /* line 334, ../sass/style.scss */
+  /* line 335, ../sass/style.scss */
   .main-part .right {
     position: absolute;
     left: 0;
     top: 600px;
   }
-  /* line 335, ../sass/style.scss */
+  /* line 336, ../sass/style.scss */
   .main-part .right .trends {
     display: none;
   }
 
-  /* line 341, ../sass/style.scss */
+  /* line 342, ../sass/style.scss */
   .main-part .center {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 347, ../sass/style.scss */
+  /* line 348, ../sass/style.scss */
   .header .small-icons {
     display: none;
   }
 
-  /* line 351, ../sass/style.scss */
+  /* line 352, ../sass/style.scss */
   .header .right-search-container {
     display: none;
   }
 
-  /* line 355, ../sass/style.scss */
+  /* line 356, ../sass/style.scss */
   .main-part .right {
     display: none;
   }
 
-  /* line 358, ../sass/style.scss */
+  /* line 359, ../sass/style.scss */
   .main-part .left {
     display: none;
   }
 
-  /* line 361, ../sass/style.scss */
+  /* line 362, ../sass/style.scss */
   .main-part .center {
     margin: 0;
   }
-  /* line 363, ../sass/style.scss */
+  /* line 364, ../sass/style.scss */
   .main-part .center .content {
     margin: 25px 0 0 0;
   }
-  /* line 367, ../sass/style.scss */
+  /* line 368, ../sass/style.scss */
   .main-part .center .tweets {
     margin-top: 220px;
   }
-  /* line 371, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   .main-part .center .tabs {
     height: 200px;
   }
-  /* line 372, ../sass/style.scss */
+  /* line 373, ../sass/style.scss */
   .main-part .center .tabs > li {
     display: block;
     width: 100%;
     height: 25%;
   }
-  /* line 380, ../sass/style.scss */
+  /* line 381, ../sass/style.scss */
   .main-part .center .video {
     margin-top: -30px;
     height: 100px;

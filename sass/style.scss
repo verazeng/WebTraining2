@@ -142,7 +142,7 @@ h3 {
 	margin-top: $nav-height;
 	position: absolute;
 	left: 0; right: 0;
-	top: 0; bottom: 0;
+	top: 0; bottom: -200px;
 }
 
 .main-part .center {
@@ -155,6 +155,7 @@ h3 {
 
 .main-part .center .content {
 	margin: 25px;
+	margin-bottom: 0;
 	position: absolute;
 	left: 0; right: 0;
 	top: 0; bottom: 0;
