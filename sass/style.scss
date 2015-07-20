@@ -348,13 +348,8 @@ h3 {
 	}
 	.main-part .center {
 		margin: 0;
-		.content {
-			margin: 25px 0 0 0;
-		}
-
-		.tweets {
-			margin-top: $nav-height*4+20px;
-		}
+		padding: 0;
+		padding-top: 25px;
 
 		.tabs {
 			& > li {

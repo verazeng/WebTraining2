@@ -494,20 +494,14 @@ h3 {
   /* line 349, ../sass/style.scss */
   .main-part .center {
     margin: 0;
+    padding: 0;
+    padding-top: 25px;
   }
-  /* line 351, ../sass/style.scss */
-  .main-part .center .content {
-    margin: 25px 0 0 0;
-  }
-  /* line 355, ../sass/style.scss */
-  .main-part .center .tweets {
-    margin-top: 220px;
-  }
-  /* line 359, ../sass/style.scss */
+  /* line 354, ../sass/style.scss */
   .main-part .center .tabs {
     height: 200px;
   }
-  /* line 360, ../sass/style.scss */
+  /* line 355, ../sass/style.scss */
   .main-part .center .tabs > li {
     display: block;
     width: 100%;
