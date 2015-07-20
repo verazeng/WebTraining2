@@ -275,10 +275,10 @@ h3 {
 .main-part .left .activities {
 	padding: 20px;
 	h1 {color: white;}
-	ul {padding: 5px 0;}
-	& > li {
+	ul {padding: 10px 0;}
+	li {
 		display: inline-block;
-		padding: 10px 0;
+		padding: 5px 0;
 	}
 
 	.act-font-icon {
@@ -301,8 +301,8 @@ h3 {
 
 .main-part .right .trends {
 	padding: 20px;
-	ul {padding: 10px 0;}
-	& > li {padding: 5px 0;}
+	ul {padding: 5px 0;}
+	li {padding: 3px 0;}
 	a:link {color: $main-blue-color; text-decoration: none;}
 	a:visited {color: $main-blue-color;text-decoration: none;}
 }
@@ -310,9 +310,9 @@ h3 {
 .main-part .right .to-follow {
 	padding: 20px;
 	ul {padding: 5px 0;}
-	& > li {padding: 5px 0;}
+	li {padding: 5px 0;}
 	img {display: inline-block;}
-	h2{display: inline-block;  padding: 0 10px;}
+	h2 {display: inline-block;  padding: 0 10px;}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) { 

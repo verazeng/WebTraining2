@@ -362,12 +362,12 @@ h3 {
 }
 /* line 278, ../sass/style.scss */
 .main-part .left .activities ul {
-  padding: 5px 0;
+  padding: 10px 0;
 }
 /* line 279, ../sass/style.scss */
-.main-part .left .activities > li {
+.main-part .left .activities li {
   display: inline-block;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 /* line 284, ../sass/style.scss */
 .main-part .left .activities .act-font-icon {
@@ -409,11 +409,11 @@ h3 {
 }
 /* line 304, ../sass/style.scss */
 .main-part .right .trends ul {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 /* line 305, ../sass/style.scss */
-.main-part .right .trends > li {
-  padding: 5px 0;
+.main-part .right .trends li {
+  padding: 3px 0;
 }
 /* line 306, ../sass/style.scss */
 .main-part .right .trends a:link {
@@ -435,7 +435,7 @@ h3 {
   padding: 5px 0;
 }
 /* line 313, ../sass/style.scss */
-.main-part .right .to-follow > li {
+.main-part .right .to-follow li {
   padding: 5px 0;
 }
 /* line 314, ../sass/style.scss */
