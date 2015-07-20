@@ -443,9 +443,10 @@ h3 {
   display: inline-block;
 }
 /* line 315, ../sass/style.scss */
-.main-part .right .to-follow h2 {
+.main-part .right .to-follow span {
   display: inline-block;
   padding: 0 10px;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
