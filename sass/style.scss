@@ -27,7 +27,7 @@ body {
 h1 {
 	font-family: 'HelveticaNeue-Light';
 	font-size: 12px;
-	font-weight: normal;
+	font-weight: bold;
 	color: rgb(97, 95, 89);
 }
 
@@ -45,6 +45,7 @@ h3 {
 
 .header {
 	position: fixed;
+	top: 0;
 	left: 0; right: 0;
 	height: $nav-height;
 	z-index: 1;
@@ -140,42 +141,28 @@ h3 {
 
 .main-part {
 	margin-top: $nav-height;
-	position: absolute;
-	left: 0; right: 0;
-	top: 0; bottom: -200px;
+	position: relative;
 }
 
 .main-part .center {
 	margin: 0 $main-part-left-right-width;
-	position: absolute;
-	top: 0; bottom: 0;
-	left: 0; right: 0;
+	padding: 25px;
 	background-color: rgb(242, 238, 232);
 }
 
-.main-part .center .content {
-	margin: 25px;
-	margin-bottom: 0;
-	position: absolute;
-	left: 0; right: 0;
-	top: 0; bottom: 0;
-}
-
 .main-part .center .tabs {
-	position: absolute;
-	left: 0; right: 0;
-	top: 0;
+	margin-bottom: 20px;
 	height: $nav-height;	
 	background-color: $background-color;
-	box-shadow: 2px 2px 2px $main-gray-color;
+	box-shadow: 2px 2px 3px $main-gray-color;
 
 	& > li {
 		display: inline-block;
+		padding-top: 10px;
 		text-align: center;
 		width: 25%;
 		height: 100%;
 		box-sizing: border-box;
-		position: relative;
 	}
 
 	li:first-of-type {
@@ -192,15 +179,10 @@ h3 {
 }
 
 .main-part .center .tweets {
-	margin-top: $nav-height+20px;
-	position: absolute;
-	left: 0; right: 0;
-	top: 0; bottom: 0;
 	background-color : $background-color;
-	box-shadow: 2px 2px 2px $main-gray-color;
+	box-shadow: 2px 0px 3px $main-gray-color;
 	
 	& >li {
-		position: relative;
 		padding: 20px;
 		border-width: 1px 0 0 0;
 		border-color: $main-gray-color;
@@ -213,14 +195,14 @@ h3 {
 	}
 
 	.avatar {
-		// float: left;
+		float: left;
 	}
 }
 
 .main-part .center .tweets .tweet-content {
 	display: inline-block;
-	padding-left: 35px;
-	width: 100%;
+	padding-left: 10px;
+	width: calc(100% - 35px);
 	box-sizing:border-box;
 
 	& > li {
@@ -282,30 +264,30 @@ h3 {
 
 .main-part .left .images {
 	& > li {
-		width: 33.3%;
 		display: inline-block;
 		&>img {
-			width: 100%;
-			height: 100%;
+			width: $main-part-left-right-width/3;
+			height: $main-part-left-right-width/3;
 		}
 	}
 }
 
 .main-part .left .activities {
 	padding: 20px;
-	h1 {color: white; padding-bottom: 5px;}
-	span {
-		display: block;
-		padding: 5px 0;
-		box-sizing: border-box;
-		.act-font-icon {
-			display: inline-block;
-			color: $main-black-color;
-		}
-		h2 {display: inline-block; padding: 0 10px;}
-		a:link {color:white;}
-		a:visited {color:white;}
+	h1 {color: white;}
+	ul {padding: 5px 0;}
+	& > li {
+		display: inline-block;
+		padding: 10px 0;
 	}
+
+	.act-font-icon {
+		display: inline-block;
+		color: $main-black-color;
+	}
+	h2 {display: inline; padding: 0 10px;}
+	a:link {color:white;}
+	a:visited {color:white;}
 }
 
 .main-part .right {
@@ -319,24 +301,29 @@ h3 {
 
 .main-part .right .trends {
 	padding: 20px;
+	ul {padding: 10px 0;}
+	& > li {padding: 5px 0;}
 	a:link {color: $main-blue-color; text-decoration: none;}
 	a:visited {color: $main-blue-color;text-decoration: none;}
 }
 
 .main-part .right .to-follow {
 	padding: 20px;
-	h2{display: inline-block; padding: 0 10px; line-height: 30px;}
+	ul {padding: 5px 0;}
+	& > li {padding: 5px 0;}
+	img {display: inline-block;}
+	h2{display: inline-block;  padding: 0 10px;}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) { 
 	.main-part .left {
-		height: 600px;
+		height: 550px;
 	}
 	.main-part .right {
 		.trends{display: none;}
 		position: absolute;
 		left: 0;
-		top: 600px;
+		top: 550px;
 	}
 
 	.main-part .center {
@@ -376,11 +363,6 @@ h3 {
 				height: 25%;
 			}
 			height: $nav-height*4;
-		}
-
-		.video {
-			margin-top: -30px;
-			height: 100px;
 		}
 	}
 }
